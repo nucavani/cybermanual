@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .about-text {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  
+  .smaller {
+    font-size: 14px;
+  }
+  
+  .about-text p {
+    transition: color 0.3s;
+  }
+  
+  .about-text p:hover {
+    color: #5709de; /* Update with your desired hover color */
+    font-weight: bold;
+  }
+  

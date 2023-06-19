@@ -1,0 +1,60 @@
+
+ *{
+  
+  margin: 0;
+	 padding: 0;
+	 font-family: sans-serif;
+ }
+ body {
+  margin: 0;
+ }
+ .video-background {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio (9 / 16 * 100) */
+    object-fit: cover;  
+  }
+  
+  .video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nav{
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .site-title {
+    font-size: 2rem;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: #777;
+  }

@@ -1,0 +1,86 @@
+/* centering hamburger finally */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  text-align: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.hamburger-container {
+  position: relative;
+}
+
+.menu-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.menu-icon:hover {
+  color: #555;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+}
+
+.menu-icon:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: #219dd7;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
